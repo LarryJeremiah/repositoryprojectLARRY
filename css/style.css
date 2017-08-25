@@ -1,0 +1,171 @@
+ body {
+	height: 50%;
+	width: 50%;
+	margin: 0;
+}
+
+#main {
+	position: absolute;
+	top: 10px;
+	left: 300px;
+	height: 500px;
+	margin-top: 90px;
+	margin-bottom: 0px;
+	margin-right: 1px;
+	margin-left: 0px;
+}
+
+#mainRules {
+	width: 600px;
+	margin: 50px auto 0 auto;
+}
+
+
+/* ik wou gebruik maken van een framework dus heb ik dit gebruik voor de css van de lettertype*/
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(font.ttf);
+}
+
+@font-face {
+	font-family: mySecondFont;
+	src: url(start.ttf);
+}
+
+@font-face {
+	font-family: myThirdFont;
+	src: url(cijfer.ttf);
+}
+
+h2 {
+	margin: 0 auto;
+	padding-left: 210px;
+	color: #0f6;
+}
+
+#list {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#list li {
+	margin: 20px;
+	padding: 10px;
+}
+
+#list {
+	line-height: 2em;
+}
+
+#controls {
+	clear: both;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: mySecondFont;
+}
+
+.speel {
+	margin-top: 2px;
+	margin-bottom: 90px;
+	margin-right: 1px;
+	margin-left: 0px;
+}
+
+.huidigHand {
+	float: left;
+}
+
+.win {
+	color: green;
+}
+
+.lose {
+	color: red;
+}
+
+#my_card {
+	clear: both;
+	border: 1px solid gray;
+	height: 220px;
+	width: 835px;
+}
+
+#knopHitSpel,
+#knopstick,
+#restartKnop {
+	display: none;
+	float: left;
+}
+
+h3 {
+	display: inline;
+	padding-right: 40px;
+	font-family: myFirstFont;
+}
+
+#result {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+
+#result > img {
+	width: 500px;
+	height: 250px;
+}
+
+#rules {
+	z-index: 1;
+	font-size: 24px;
+	right: 20px;
+	top: 20px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #F03;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #F03;
+}
+
+
+/******** jquery **********/
+
+@media screen and (max-width: 480px) {
+	body {
+		height: 50%;
+		max-width: 500px;
+	}
+	.speel {
+		display: none;
+	}
+	#main {
+		width: 100%;
+		height: 50px;
+		position: inherit;
+		margin: 0;
+	}
+	#my_card {
+		width: 100%;
+		height: 50px;
+		right: 300px;
+		position: inherit;
+		margin: 0;
+	}
+}
