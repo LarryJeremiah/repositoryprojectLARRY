@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/framework7.material.min.css" />
+	<link rel="stylesheet" href="css/framework7.material.colors.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<link rel="shortcut icon" href="images/favicon.jpg" alt="logo spel" />
+	<link rel="stylesheet" href="style.css" type='text/css'>
+	<title> blackjack </title>
+</head>
+
+<body class>
+	<div class="panel-overlay"></div>
+	<div id="panelLeft" class="panel panel-left panel-reveal"> <a href="rules.html"> 
+		</a> </div>
+	<div class="panel panel-right panel-cover">
+		<button onclick="enableMute()" type="button"> geluid uit</button>
+		<button onclick="disableMute()" type="button">geluid aan</button>
+		<audio id="mySong" autoplay loop>
+			<source src="sound/poker.mp3" type="audio/mpeg"> </audio>
+	</div>
+	<div class="views">
+		<div class="view view-main">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="center sliding"> Menu: Blackjack </div>
+					<div class="right">
+						<a href="#" data-panel="right" class="button open-panel" onclick=""> <i class="icon icon-bars"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="toolbar">
+				<div class="toolbar-inner">
+					<a  data-panel="right" class="button open-panel"> Geluid </a> 
+				</div>
+			</div>
+			<div class="page-content">
+				<div id="speel">
+					<h1>Click on the deck to reveal your cards</h1></div>
+				<div id="main">
+					<h3 id="totalHdr"></h3>
+					<h3 id="resultHnd"></h3>
+					<div id="my_card"> </div>
+					<div id="result"><img src="images/check.png" id="afbeeldingResult"></div>
+					<div id="controls">
+						<div id="knopDealSpel"> <img src="images/deck_small.jpg"> </div>
+						<div id="knopHitSpel"> <img src="images/hit_small.jpg"> </div>
+						<div id="knopstick"> <img src="images/stick_small.jpg"> </div>
+						<div id="restartKnop"> <img src="images/restart_small.jpg"> </div>
+					</div>
+				</div>
+
+				<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+				<!--<script type="text/javascript" src="scripts/jquery-1.6.2.min.js"></script>-->
+				<script type="text/javascript" src="scripts/my_scripts.js"></script>
+				<!-- Path to Framework7 Library JS-->
+				<script type="text/javascript" src="scripts/framework7.min.js"></script>
+				<!------ path to my framework library  ------->
+				<script type="text/javascript" src="scripts/my-app.js"></script>
+				<!--<script src="script.js"></script>-->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
